@@ -1,0 +1,47 @@
+Dataset file: data/raw/renewable_energy_synthetic_dataset.csv
+
+== Inspection ==
+Records: 400 | Columns: 6
+Column names: Country, Energy_Source, Year, Renewable_Energy_Production_GWh, Estimated_Renewable_Energy_Consumption_GWh, Installed_Capacity_MW
+Countries: 10 | Years: 2015-2024 (10 distinct) | Energy sources: Biomass, Hydro, Solar, Wind
+
+Missing values per column:
+Total missing values: 8
+Exact duplicate rows: 0
+
+== Cleaning ==
+Consumption values imputed: 8 (of which filled by overall-median fallback: 0)
+Missing values remaining: 0
+Rows retained: 400
+
+== Descriptive statistics ==
+
+== Exploratory analysis ==
+Total production in 2024 vs 2015: 98.6% higher
+Source with highest aggregate production: Hydro
+Source ranking: Hydro > Wind > Solar > Biomass
+Country with highest aggregate production: Country A
+Correlation, installed capacity vs production (Pearson): 0.848
+Outliers per source (IQR rule): Biomass=4, Hydro=0, Solar=3, Wind=2
+
+Figures written to outputs/figures: fig1_production_by_year.png, fig2_production_by_source.png, fig3_production_boxplot.png, fig4_production_histogram.png, fig5_capacity_vs_production.png
+
+R version 4.3.3 (2024-02-29)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 24.04.5 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.12.0 
+LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.0
+
+locale:
+[1] C
+
+time zone: Etc/UTC
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+[1] compiler_4.3.3

@@ -1,0 +1,4 @@
+"variable","n","mean","median","sd","min","max"
+"Renewable_Energy_Production_GWh",400,3115.84,2599.05,2116.81,319.9,11676.74
+"Estimated_Renewable_Energy_Consumption_GWh",400,2950.08,2456.97,1999.68,316.46,11499.5
+"Installed_Capacity_MW",400,1092.97,851.29,863.69,77.04,6224.38
